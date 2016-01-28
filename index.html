@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BxSlider test</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.min.css">
+</head>
+<body>
+
+<ul class="bxslider">
+  <li><img src="img/pic1.jpg" /></li>
+  <li><img src="img/pic2.jpg" /></li>
+  <li><img src="img/pic3.jpg" /></li>
+  <li><img src="img/pic4.jpg" /></li>
+</ul>
+
+<script>
+    $(document).ready(function(){
+        $('.bxslider').bxSlider({
+            minSlides: 3,
+            maxSlides: 4,
+            slideWidth: 170,
+            slideMargin: 10
+        });
+    });
+</script>
+
+</body>
+</html>
+
